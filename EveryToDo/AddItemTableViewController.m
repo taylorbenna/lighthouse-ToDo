@@ -38,6 +38,7 @@
     newToDo.title = self.titleTextField.text;
     newToDo.desc = self.descriptionTextField.text;
     newToDo.priority = self.priorityControl.selectedSegmentIndex;
+    newToDo.isCompleted = NO;
     [self.delegate messageSent:newToDo];
     [self dismissViewControllerAnimated:true completion:nil];
 }
